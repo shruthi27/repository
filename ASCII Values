@@ -1,0 +1,13 @@
+
+public class asciicode 
+{  
+	public static void main(String s[])
+	{
+	
+		for(char letter = 'A'; letter<='Z'; ++letter)
+		System.out.println("ASCII of"+letter+"="+(int)letter);
+		
+	}
+	
+	
+}
