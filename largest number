@@ -1,0 +1,27 @@
+public class largerno 
+{
+	public static void main(String s[])
+	{
+		int x=246,y=342,z=546;
+		int largest = Math.max(x,Math.max(y,z));
+		
+		if(largest==x)
+		{
+			System.out.println(" largest number is x :"+x);
+			
+		}
+		else if(largest==y)
+		{
+			System.out.println(" largest number is y :"+y);
+			
+		}
+		else if(largest==z)
+		{
+			System.out.println(" largest number is z :"+z);
+		}
+			
+		
+		
+	}
+
+}
