@@ -1,0 +1,43 @@
+
+public class constructorchaining 
+{
+
+	public static void main (String[] args)
+	{
+		System.out.println("constructor chainng example in java");
+		
+		vehicle car = new car();
+		
+		System.out.println("car object created succesfully");
+	}
+}
+
+class vehicle
+{
+	vehicle()
+	{
+		System.out.println("parent : Iam vehicle constructor");
+		
+	}
+}
+
+class car extends vehicle 
+{
+	car()
+	{
+		
+		this("");
+		System.out.println("child : Iam car constructor");
+				
+	}
+	
+	car(String name)
+	{
+		super();
+		System.out.println("child : Iam one argument car constructor");
+	}
+}
+
+
+
+
