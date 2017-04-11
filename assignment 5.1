@@ -1,0 +1,70 @@
+import java.lang.Math;
+
+public class abstraction
+{
+	public static void main(String[] args)
+	{
+		Triangle t = new Triangle();
+		Rectangle r= new Rectangle();
+		Circle c= new Circle();
+		
+		t.area(); t.perimeter();
+		r.area(); r.perimeter();
+		c.area(); c.perimeter();
+	}
+}
+abstract class shape
+{
+	abstract void area();
+	abstract void perimeter();
+	double area;
+	double perimeter;
+}
+ class Triangle extends shape
+ {
+	 double a=24,b=30,c=18,s;
+	 void area()
+	 {
+		 s=(a+b+c)/2;
+		 area= Math.sqrt(s*(s-a)*(s-b)*(s-c));
+		System.out.println("area of Triangle is"+area);
+	}
+	void perimeter()
+	{
+		perimeter= a+b+c;
+		System.out.println("perimeter of Triangle is"+perimeter);
+	}
+}
+ class Rectangle extends shape
+ {
+	 double l=70,b=20;
+	 void area()
+	 {
+		 area=l*b;
+		 System.out.println("area of Rectangle is"+area);
+	 }
+	 void perimeter()
+	 {
+		 perimeter = 2*(l+b);
+		 System.out.println("perimetr of rectangle is"+perimeter);
+	 }
+	 
+ }
+ class Circle extends shape
+ {
+	 double r=5;
+	 void area()
+	 {
+		 area=Math.PI * r * r;
+		 System.out.println("area of circle is"+area);
+		 
+	 }
+	 void perimeter()
+	 {
+		 perimeter= 2*Math.PI*r;//2πr
+		 System.out.println("perimetr of circle is"+perimeter);
+		 
+	 }
+ }
+		 
+	
