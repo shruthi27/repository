@@ -1,0 +1,35 @@
+
+public class TestShirt 
+{
+
+	public static void main (String[] args)
+	{
+		 Shirt testShirt1=new Shirt(15,30,"cotton");
+		 Shirt testShirt2= new Shirt(13,28,"cotton");
+		 Shirt testShirt3= new Shirt(17,32,"sock");
+		 
+		 testShirt1.Printf();
+		 testShirt2.Printf();
+		 testShirt3.Printf();
+		 
+	}
+}
+class Shirt
+{
+	public double collarSize;
+	public double sleeveLength;
+	public String material;
+
+	Shirt(double c,double s, String m)
+	{
+		 collarSize=c;
+		 sleeveLength=s;
+		 material=m;
+		 m="Cotton";
+
+	}
+	void Printf()
+	{
+		System.out.println("Collarsize = "+collarSize+"   "+"SleeveLength = "+sleeveLength+"   "+"Material = "+material);
+	}
+}
